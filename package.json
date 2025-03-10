@@ -8,7 +8,9 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "gh-pages": "^6.1.1",
-    "react-router-dom": "^6.22.1"
+    "react-router-dom": "^6.22.1",
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0"
   },
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
@@ -23,7 +25,8 @@
     "npm": ">=9.x"
   },
   "resolutions": {
-    "ajv": "^8.0.0"
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0"
   },
   "browserslist": {
     "production": [
