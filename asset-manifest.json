@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/VolatilisTrends/static/css/main.862a80ee.css",
+    "main.js": "/VolatilisTrends/static/js/main.3b87ea3e.js",
+    "static/js/415.4d6acbeb.chunk.js": "/VolatilisTrends/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/VolatilisTrends/static/js/787.1ed0c42c.chunk.js",
+    "static/media/avatar.svg": "/VolatilisTrends/static/media/avatar.35907ce3be5cbb309351319f12df7d26.svg",
+    "static/media/CURRICULO MAURO.pdf": "/VolatilisTrends/static/media/CURRICULO MAURO.6fac4cf8625ee0c13986.pdf",
+    "static/media/home.png": "/VolatilisTrends/static/media/home.5a53a106cec35ca3ba82.png",
+    "static/media/logo.webp": "/VolatilisTrends/static/media/logo.a9c6ec4edcdd66aedae1.webp",
+    "static/media/mustillus.png": "/VolatilisTrends/static/media/mustillus.0876dd24564110907b5e.png",
+    "static/media/automation.png": "/VolatilisTrends/static/media/automation.76a466af0011030df78a.png",
+    "static/media/sejaei.png": "/VolatilisTrends/static/media/sejaei.4ca81fa559a860a2f2a4.png",
+    "static/media/muverso.png": "/VolatilisTrends/static/media/muverso.9a460325e8f086acd7a8.png",
+    "static/media/sertao.png": "/VolatilisTrends/static/media/sertao.9941f06af30309315e7b.png",
+    "static/media/ai-models.png": "/VolatilisTrends/static/media/ai-models.5df350bd75f95d7e9a56.png",
+    "static/media/guide.png": "/VolatilisTrends/static/media/guide.891ca877a25640ce44c7.png",
+    "index.html": "/VolatilisTrends/index.html",
+    "static/media/pre.svg": "/VolatilisTrends/static/media/pre.3366565c9c2d402db457.svg",
+    "main.862a80ee.css.map": "/VolatilisTrends/static/css/main.862a80ee.css.map",
+    "main.3b87ea3e.js.map": "/VolatilisTrends/static/js/main.3b87ea3e.js.map",
+    "415.4d6acbeb.chunk.js.map": "/VolatilisTrends/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/VolatilisTrends/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.862a80ee.css",
+    "static/js/main.3b87ea3e.js"
+  ]
+}
