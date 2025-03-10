@@ -28,6 +28,7 @@ jobs:
         env:
           CI: false
           PUBLIC_URL: /VolatilisTrends
+          NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
