@@ -22,6 +22,9 @@
     "node": ">=18.x",
     "npm": ">=9.x"
   },
+  "resolutions": {
+    "ajv": "^8.0.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
