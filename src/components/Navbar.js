@@ -91,7 +91,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://volatilistrends.elementfx.com/index.html"
+                href="https://wa.me/+5581994729094"
                 target="_blank"
                 rel="noreferrer"
               >

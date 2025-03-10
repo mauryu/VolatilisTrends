@@ -2,19 +2,14 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-
-  SiSlack,
   SiVercel,
-  SiMacos,
   SiMeta,
+  SiNetlify,
 } from "react-icons/si";
-import { FaWindows } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
-import {
-  DiUbuntu,
-} from "react-icons/di";
+import { FaWindows, FaFigma } from "react-icons/fa";
+import { DiUbuntu } from "react-icons/di";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
+
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -22,10 +17,10 @@ function Toolstack() {
         <DiUbuntu />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <FaWindows />
+        <FaWindows />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode  />
+        <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaFigma />
@@ -34,13 +29,13 @@ function Toolstack() {
         <SiVercel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <SiNetlify/>
+        <SiNetlify />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <TbBrandGoogleAnalytics />
+        <TbBrandGoogleAnalytics />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <SiMeta/>
+        <SiMeta />
       </Col>
     </Row>
   );

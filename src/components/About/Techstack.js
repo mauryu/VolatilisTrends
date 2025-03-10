@@ -13,19 +13,9 @@ import {
   DiIllustrator,
   DiCss3,
   DiLinux,
- 
-
-
+  DiHtml5,
 } from "react-icons/di";
-import {
-
-  SiMysql,
-  SiOpenai, 
-
-
-} from "react-icons/si";
-import { DiHtml5 } from "react-icons/di";
-
+import { SiMysql, SiOpenai } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -64,16 +54,16 @@ function Techstack() {
         <DiPhotoshop />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <DiHtml5 />
+        <DiHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <DiIllustrator />
+        <DiIllustrator />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <SiOpenai />
+        <SiOpenai />
       </Col>
     </Row>
   );

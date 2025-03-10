@@ -1,41 +1,89 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import React, { useState } from 'react';
+import './Projects.css';
 
+const ProjectCards = ({ projects }) => {
+  const [activeProject, setActiveProject] = useState(null);
+  const [filter, setFilter] = useState('all');
 
-function ProjectCards(props) {
+  const handleMouseEnter = (id) => {
+    setActiveProject(id);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveProject(null);
+  };
+
+  const filteredProjects = filter === 'all' 
+    ? projects 
+    : projects.filter(project => 
+        Array.isArray(project.category) 
+          ? project.category.includes(filter)
+          : project.category === filter
+      );
+
+  const categories = [
+    { id: 'all', label: 'Todos' },
+    { id: 'social', label: 'Impacto Social' },
+    { id: 'gaming', label: 'Gaming' },
+    { id: 'fintech', label: 'Fintech' },
+    { id: 'content', label: 'Conteúdo' },
+    { id: 'ai', label: 'Inteligência Artificial' }
+  ];
+
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
+    <div className="projects-section">
+      <div className="projects-filter">
+        {categories.map(category => (
+          <button 
+            key={category.id}
+            className={`filter-button ${filter === category.id ? 'active' : ''}`}
+            onClick={() => setFilter(category.id)}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+            {category.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="projects-grid">
+        {filteredProjects.map((project) => (
+          <div 
+            className={`project-card ${activeProject === project.id ? 'active' : ''}`}
+            key={project.id}
+            onMouseEnter={() => handleMouseEnter(project.id)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="project-image" >
+              <img 
+                src={project.imageUrl} 
+                                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            </div>
+            <div className="project-content">
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <div className="project-details">
+                <div className="project-role">
+                  <h4>Minha Função:</h4>
+                  <p>{project.role}</p>
+                </div>
+                <div className="project-tech">
+                  <h4>Tecnologias:</h4>
+                  <div className="tech-tags">
+                    {project.technologies.map((tech, index) => (
+                      <span className="tech-tag" key={index}>{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
-}
+};
+
 export default ProjectCards;

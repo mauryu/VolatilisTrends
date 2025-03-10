@@ -14,9 +14,9 @@ function Type() {
         ],
         autoStart: true,
         loop: true,
-        delay : 0,
-        deleteSpeed: 10,
-        typeSpeed: 0.5, 
+        typeSpeed: 15, // Reduzido de 50 para 15 (3x mais rápido)
+        deleteSpeed: 15, // Velocidade de apagamento também ajustada
+        delay: 0, // Remove qualquer delay adicional
       }}
     />
   );
